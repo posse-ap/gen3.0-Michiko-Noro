@@ -1,1 +1,1 @@
-＃rookie_hackathon-202207-team1A
+# rookie_hackathon-202207-team1A
