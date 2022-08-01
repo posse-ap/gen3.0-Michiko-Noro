@@ -1,0 +1,393 @@
+/* header部分 */
+.header {
+  display: flex;
+  display: inline-block;
+  /* padding: 15px, 24px; */
+  background-color: aquamarine;
+
+}
+
+.header_left {
+  position: absolute;
+  padding-left: 24px;
+  left: 0;
+}
+
+.header_right {
+  display: flex;
+  position: absolute;
+  padding-right: 24px;
+  padding-left: 24px;
+  right: 0%;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #666666;
+}
+
+.header_right_text {
+  display: flex;
+  margin-top: 10px;
+}
+
+.header_right_text>li {
+  margin-right: 32px;
+}
+
+.header_right_icon {
+  display: flex;
+  padding-right: 16px;
+}
+
+.header_right_icon>li {
+  border: 1px solid #EEE;
+  border-radius: 50%;
+  border-color: #EEE;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 84px;
+}
+
+/* header部分終わり */
+
+/* main部分 */
+
+
+.contents_top {
+  display: flex;
+  justify-content: right;
+}
+
+.top-text{
+  background: #EFF2F5;
+  border-radius: 24px;
+  width: 500px;
+  height: 281px;
+  left: 142px;
+  top: 279px;
+  margin-top: 278px;
+  margin-right: 880px;
+  z-index: 20;
+}
+
+.top-text>p {
+  font-size: 16px;
+  color: #0071BC;
+  padding: 40px, 62px, 212px, 62px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.top-text>h2 {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  color: #333333;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  margin-left: 62px;
+  margin-right: 63px;
+}
+
+.contents_top>img {
+  margin-top: 80px;
+  border-radius: 24px;
+  position: absolute;
+  width: 976px;
+  height: 680px;
+  right: 0px;
+  top: 0px;
+  background: url(IMG_3763.jpg);
+  border-radius: 80px 0px 0px 80px;
+  z-index: 10;
+}
+
+.contents_top>.small_text{
+  position: absolute;
+  background: #ADADAD;
+  width: 8px;
+  height: 8px;
+  left: 112px;
+  bottom: 30px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.contents_top>.small_text>li{
+  /* position: absolute; */
+  width: 100px;
+  height: 21px;
+  left: 126px;
+  margin-top: -6px;
+  margin-bottom: 24px;
+  margin-left: 12px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.contents_middle {
+  margin-top: 986px;
+  text-align: center;
+  padding: 8px;
+  margin-top: 300px;
+}
+
+.contents_middle_title>h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.contents_middle_title>p {
+  size: 14px;
+  color: #0071BC;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contents_middle_text {
+  /* display: inline-block;
+  padding: 40px, ; */
+  margin-top: 43px;
+  margin-bottom: 140px;
+  justify-content: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+}
+
+.contents_middle_text>img {
+  width: 472px;
+  height: 312px;
+
+  background: url(IMG_3569_polarr.jpg);
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.contents_middle_text>div {
+  padding-left: 40px;
+  width: 472px;
+  height: 175px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: justify;
+  margin-top: 80px;
+
+  /* dark */
+
+  color: #333333;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.contents_bottom {
+  flex-direction: column;
+  background-image: radial-gradient(rgba(0, 113, 188, 0.9)0%, rgba(0, 113, 188, 0.9) 100%), url(./img/bg-line.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0071BC;
+  background-color: rgba(red, green, blue, alpha);
+  border-radius: 50px;
+  width:  984px;
+  height: 357px;
+  background-size: 984px;
+  margin-bottom: 136px;
+  margin-left: 230px;
+  z-index: 10;
+}
+
+
+.bottom_title{
+  display: flex;
+  /* justify-content: center; */
+}
+
+.bottom_title >p{
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 68px;
+}
+
+.bottom_title{
+  z-index: 20;
+  /* background: url(./img/icon-line.svg); */
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  left: 33.23%;
+  /* right: 62.7%; */
+  top: 22.63%;
+  bottom: 66.2%;
+  margin-left: 327px;
+  
+}
+
+.bottom_title_img{
+  background: radial-gradient(#fff 60%, transparent 60%);
+}
+
+.contents_bottom>.bottom_title>img {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  size: 40px;
+  left: 33.23%;
+  right: 62.7%;
+  top: 22.63%;
+  bottom: 66.2%;
+  width: 30px;
+  margin-top: 68px;
+}
+
+.line_information {
+  text-align: center;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.line_link {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 98px;
+  width: 320px;
+  height: 50px;
+  margin-left: 333px;
+  margin-top: 24px;
+}
+
+.line_link >p {
+  color: #666666;
+  padding-top: 18px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.line_link>img {
+  position: absolute;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-left: 260px;
+}
+
+
+/* main部分終わり */
+
+/* footer部分 */
+.footer {
+  display: flex;
+}
+
+.footer_title {
+  /* display: flex; */
+  text-align: center;
+}
+
+.footer_title >img{
+  margin-bottom: 24px;
+}
+
+.footer_title>p {
+  justify-content: center;
+  align-content: center;
+  line-height: 3px;
+  margin-bottom: 32px;
+}
+
+.footer_text {
+  display: flex;
+  text-align: center;
+  width: 118px;
+  /* left: 1px; */
+  /* top: 0px; */
+  height: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  font-family: 'Noto Sans JP';
+  color: #666666;
+}
+
+.footer_text>img {
+  float: left;
+  margin-top: 24px;
+}
+
+.foote_link_icon {
+  text-align: center;
+}
+
+.footer_icon {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.footer_icon>li {
+  border: 1px solid #EEE;
+  border-radius: 50%;
+  border-color: #EEE;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 84px;
+}
+
+.footer_icon>li>img {
+  width: 25px;
+  height: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: #EEEE;
+
+}
+
+.footer_bottom {
+  text-align: center;
+  margin-bottom: 128px;
+}
+
+.footer_bottom>li {
+  font-size: 10px;
+}
+
+/* footer部分終わり */
