@@ -1,68 +1,75 @@
 /* header部分 */
-.header {
+.header{
+  align-items: center;
+  background-color: #fff;
   display: flex;
-  display: inline-block;
-  /* padding: 15px, 24px; */
-  background-color: aquamarine;
-
+  padding: 15px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 20;
 }
 
-.header_left {
-  position: absolute;
-  padding-left: 24px;
-  left: 0;
+.header_right{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 16px;
 }
 
-.header_right {
+.header_right_text{
   display: flex;
-  position: absolute;
-  padding-right: 24px;
-  padding-left: 24px;
-  right: 0%;
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 700;
+  gap: 16px;
+}
+
+.header_right_text_item{
+  font-weight: bold;
+  color: #666;
   font-size: 14px;
-  line-height: 160%;
-  color: #666666;
 }
 
-.header_right_text {
+.header_right_icon{
   display: flex;
-  margin-top: 10px;
+  list-style: none;
+  gap: 16px;
 }
 
-.header_right_text>li {
-  margin-right: 32px;
-}
-
-.header_right_icon {
-  display: flex;
-  padding-right: 16px;
-}
-
-.header_right_icon>li {
-  border: 1px solid #EEE;
+.icon_item{
+  /* border-style: solid 1px #eee; */
+  text-align: center;
+  border: solid 1px #eee;
   border-radius: 50%;
-  border-color: #EEE;
-  width: 50px;
+  color: #adadad;
+  display: inline-flex;
+  font-size: 24px;
   height: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 84px;
+  width: 50px;
+}
+
+.icon_item> img{
+  width: 24px;
+  height: 24px;
+}
+
+a{
+  color: #666;
+  text-decoration: none;
 }
 
 /* header部分終わり */
 
 /* main部分 */
 
+main{
+  padding-top: 80px;
+}
 
 .contents_top {
   display: flex;
   justify-content: right;
+  z-index: 20;
 }
 
 .top-text{
@@ -235,8 +242,8 @@
 .bottom_title >p{
   color: white;
   font-weight: bold;
-  font-size: 36px;
-  margin-top: 68px;
+  font-size: 40px;
+  margin-top: 75px;
 }
 
 .bottom_title{
@@ -265,15 +272,31 @@
   right: 62.7%;
   top: 22.63%;
   bottom: 66.2%;
-  width: 30px;
-  margin-top: 68px;
+  width: 40px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .line_information {
   text-align: center;
   color: white;
-  margin-top: 16px;
-  margin-bottom: 24px;
+}
+
+.line_information>p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
 }
 
 .line_link {
