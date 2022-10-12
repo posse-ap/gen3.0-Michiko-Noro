@@ -16,8 +16,8 @@
   <title>Document</title>
 </head>
 
-<body>
-  <header class="header">
+<body id="js_topBody">
+  <header class="header" id="js_header">
     <div class="header_left">
       <img src="../img/logo.svg" alt="header_logo">
     </div>
@@ -37,19 +37,26 @@
         </li>
       </ul>
     </div>
+    <button class="header_hamburger" id="js_headerHamburger"></button>
+    <nav class="menu">
+      <ul class="menu_list">
+        <li class="menu_item"><a href="./index.html" class="menu_item_link">POSSEとは</a></li>
+        <li class="menu_item"><a href="./quiz.html" class="menu_item_link">　クイズ</a></li>
+      </ul>
+    </nav>
   </header>
   <!-- header部分終わり -->
 
   </header>
 
-  <main>
+  <main id="js_main">
     <div class="contents_top">
       <p>POSSE課題</p>
       <h1>ITクイズ</h1>
       <img src="../img/quiz/bg-hero.jpg" alt="top_img">
     </div>
-    <div class="contents_middle">
-      <div class="q_1">
+    <div class="contents_middle" id="js-quizContainer">
+      <!-- <div class="q_1">
         <div class="question">
           <h1>Q1</h1>
           <p>日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</p>
@@ -140,7 +147,7 @@
             <li>約11倍<i class="fa-solid fa-play"></i></li>
           </ul>
           <p><i src="../img/icon/icon-note.svg"></i>Accenture Technology Vision 2021</p>
-        </div>
+        </div> -->
       <!-- </div> -->
     </div>
     <div class="contents_bottom">
@@ -160,7 +167,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer id="js_footer">
     <div class="footer_title">
       <img src="../img/logo.svg" alt="footer_logo">
       <!-- <div class="footer_text"> -->
