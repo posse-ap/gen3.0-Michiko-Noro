@@ -414,3 +414,55 @@ main{
 }
 
 /* footer部分終わり */
+
+
+@media screen and (max-width: 480px){ 
+  .contents_top>img {
+    margin-top: 80px;
+    border-radius: 24px;
+    position: absolute;
+    width: 255%;
+    height: 170%;
+    left: 0%;
+    top: 0px;
+    background: url(IMG_3763.jpg);
+    border-radius: 0%;
+    z-index: 10;
+  }
+
+
+  .top-text{
+    background: #EFF2F5;
+    border-radius: 24px;
+    width: 500px;
+    height: 281px;
+    left: 142px;
+    top: 279px;
+    margin-top: 278px;
+    margin-right: 880px;
+    z-index: 20;
+  }
+  
+  .top-text>p {
+    font-size: 16px;
+    color: #0071BC;
+    padding: 40px, 62px, 212px, 62px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  
+  .top-text>h2 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #333333;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    margin-left: 62px;
+    margin-right: 63px;
+  }
+
+}
