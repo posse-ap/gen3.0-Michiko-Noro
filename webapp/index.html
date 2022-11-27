@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+  <script src="./assets/script/common.js" defer></script>
+  <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="./assets/script/dounut1.js" defer></script>
+  <script src="./assets/script/dounut2.js" defer></script>
+  <script src="./assets/script/column.js" defer></script>
+  <script src="./assets/script/Twitter.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <nav class="header">
+      <div class="header_logo"><img src="./assets/img/logo.svg" alt="header_logo"></div>
+      <p>4th week</p>
+      <button id="openModal">記録・投稿</button>
+    </nav>
+
+    <!-- モーダルエリアここから -->
+<section id="modalArea" class="modalArea">
+  <div id="modalBg" class="modalBg"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <ul class="modal_left">
+        <div class="answer_item">
+          <li>学習日</li>
+          <input type="date">
+        </div>
+        <!-- <li>学習コンテンツ（複数選択可）</li> -->
+        <div class="answer_item">
+          <li>学習コンテンツ（複数選択可）</li>
+          <label class="checknox-wrap">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            N予備校
+          </label>
+          
+          <label class="checknox-wrap">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            ドットインストール
+          </label>
+          
+          <label class="checknox-wrap">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            POSSE課題
+          </label>
+        </div>
+        <!-- <li>学習言語（複数選択可）</li> -->
+        <div class="answer_item">
+          <li>学習言語（複数選択可）</li>
+          <div class="answer_item_lang">
+            <label class="checknox-wrap">
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+              JavaScript
+            </label>
+            
+            <label class="checknox-wrap">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              CSS
+            </label>
+            
+            <label class="checknox-wrap">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              PHP
+            </label>
+  
+            <label class="checknox-wrap">
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+              HTML
+            </label>
+            
+            <label class="checknox-wrap">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              Laravel
+            </label>
+            
+            <label class="checknox-wrap">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              SQL
+            </label>
+  
+            <label class="checknox-wrap">
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+              SHELL
+            </label>
+            
+            <label class="checknox-wrap">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              情報システム基礎知識(その他)
+            </label>
+          </div>
+        </div>
+      </ul>
+      <ul class="modal_right">
+        <li>学習時間</li>
+        <input type="text">
+        <li>Twitter用コメント</li>
+        <textarea name="" id="twitter" cols="30" rows="10"></textarea>
+        <label class="checknox-wrap">
+              <input id="tweetbutton" type="checkbox">
+              <span class="checkmark"></span>
+              Twitterにシェアする
+            </label>
+      </ul>
+    </div>
+    <div class="push_button">
+      <button id="modal_record" type="button" onclick="record()">記録・投稿</button>
+    </div>
+    <div id="closeModal" class="closeModal">
+      ×
+    </div>
+  </div>
+</section>
+
+<div class="loading_screen">
+  <div id="start_record" class="loader">
+    <p class="txt">ローディング中</p>
+    <div class="start_loader">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+    </div>
+    <div class="loader_back"></div>
+  </div>
+  
+  <div id="end_record" class="loader">
+    <p class="txt">記録・投稿<br>完了しました</p>
+  </div>
+</div>
+ 
+<!-- モーダルエリアここまで -->
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="boxes">
+        <div class="box-wrapper1">
+          <ul class="box1">
+            <li class="box-item">
+              <h1>Today</h1>
+              <p>3</p>
+              <h2>hour</h2>
+            </li>
+            <li class="box-item">
+              <h1>Month</h1>
+              <p>120</p>
+              <h2>hour</h2>
+            </li>
+            <li class="box-item">
+              <h1>Total</h1>
+              <p>1348</p>
+              <h2>hour</h2>
+            </li>
+          </ul>
+          <div class="box2">
+            <div id="column"></div>
+          </div>
+        </div>
+        <div class="box-wrapper2">
+          <div class="box3">
+            <h1>学習言語</h1>
+            <div id="dounut1"></div>
+          </div>
+          <div class="box3">
+            <h1>学習コンテンツ</h1>
+            <div id="dounut2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="date">2020年10月</div>
+  </footer>
+  
+
+</body>
+</html>
